@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Update User</title>
+
+  <link rel="stylesheet" href=
+    "https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script> 
+</head>
+<body>
+       <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <h1>Update_User</h1>
+            <form method="post" action="">
+             <div class="form-group">
+              <label>Name:</label>
+               <input type="text" name="name" class="form-control" value="<?php foreach($none as $value){ echo $value->name; }?>"> 
+                </div>
+                 <div class="form-group">
+                  <label>Phone:</label>
+                   <input type="text" name="phone" class="form-control" value="<?php foreach($none as $value){ echo $value->phone; }?>">  
+                    </div> 
+                     <div class="form-group">
+                     <label>Email:</label>
+                     <input type="email" name="email" class="form-control" value="<?php foreach($none as $value){ echo $value->email; }?>"> 
+                     </div>
+                     <div class="form-group">
+                    <label>Password:</label>
+                   <input type="password" name="password" class="form-control" value="<?php foreach($none as $value){ echo $value->password; }?>"> 
+                  </div>
+             <input type="submit" name="update" value="update" class="btn btn-primary">
+           </form>
+          </div>
+        </div>
+      </div>
+</body>
+</html>
